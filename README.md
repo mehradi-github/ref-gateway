@@ -22,4 +22,6 @@ Setting up a new project is quite simple with the [Nest CLI](https://docs.nestjs
 npm i -g @nestjs/cli
 $ nest new
 
+pnpm install
+pnpm run start:dev
 ```
