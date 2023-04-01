@@ -24,4 +24,8 @@ $ nest new
 
 pnpm install
 pnpm run start:dev
+
+# users and posts
+nest g app
+
 ```
