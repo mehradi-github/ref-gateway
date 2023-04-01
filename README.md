@@ -25,7 +25,9 @@ $ nest new
 pnpm install
 pnpm run start:dev
 
-# users and posts
+# Adding users and posts
 nest g app
+# Adding graphql (first code) in users app
+nest g resource
 
 ```
