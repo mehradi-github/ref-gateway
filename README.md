@@ -30,4 +30,6 @@ nest g app
 # Adding graphql (first code) in users app
 nest g resource
 
+pnpm i @apollo/gateway @apollo/subgraph @nestjs/graphql @nestjs/apollo @apollo/server graphql
+
 ```
