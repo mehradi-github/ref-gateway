@@ -32,4 +32,7 @@ nest g resource
 
 pnpm i @apollo/gateway @apollo/subgraph @nestjs/graphql @nestjs/apollo @apollo/server graphql
 
+ # run users' graphql 
+ pnpm start:dev users
+
 ```
