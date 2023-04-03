@@ -36,3 +36,23 @@ pnpm i @apollo/gateway @apollo/subgraph @nestjs/graphql @nestjs/apollo @apollo/s
  pnpm start:dev users
 
 ```
+url: http://localhost:3000/graphql
+users'qraphql example:
+
+```graphql
+mutation{
+  createUser(createUserInput:{id:"123",email:"test@gmail.com",password:"pass123"}){
+    id
+    email
+    password
+  }
+}
+
+query{
+  user(id:"123"){
+    id
+    email
+    password
+  }
+}
+```
