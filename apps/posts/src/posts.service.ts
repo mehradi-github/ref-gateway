@@ -1,17 +1,20 @@
 import { Injectable } from '@nestjs/common';
 import { CreatePostInput } from './dto/create-post.input';
+import { Post } from './entities/post.entity';
 
 @Injectable()
 export class PostsService {
+  private readonly posts: Post[] = [];
   create(createPostInput: CreatePostInput) {
-    return 'This action adds a new post';
+    this.posts.push(createPostInput);
+    return createPostInput;
   }
 
   findAll() {
-    return `This action returns all posts`;
+    return this.posts;
   }
 
-  findOne(id: number) {
-    return `This action returns a #${id} post`;
+  findOne(id: string) {
+    return this.posts.find((post) => post.id === id);
   }
 }
