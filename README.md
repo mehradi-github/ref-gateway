@@ -1,5 +1,5 @@
 # The Gateway
-This project is built with NestJS and Graphql.
+The gateway API is built with NestJS and Graphql.
 
 - [The Gateway](#the-gateway)
   - [Prerequisites](#prerequisites)
