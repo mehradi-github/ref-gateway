@@ -81,4 +81,9 @@ query{
   }
 } 
 
+# HTTP HEADERS
+{
+  "Authorization":"123"
+}
+
 ```
