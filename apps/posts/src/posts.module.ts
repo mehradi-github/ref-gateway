@@ -6,6 +6,7 @@ import {
   ApolloFederationDriver,
   ApolloFederationDriverConfig,
 } from '@nestjs/apollo';
+import { UsersResolver } from './users.resolver';
 
 @Module({
   imports: [
@@ -16,6 +17,6 @@ import {
       },
     }),
   ],
-  providers: [PostsResolver, PostsService],
+  providers: [PostsResolver, PostsService, UsersResolver],
 })
 export class PostsModule {}

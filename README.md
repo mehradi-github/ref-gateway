@@ -54,5 +54,31 @@ query{
     email
     password
   }
+
+query{
+  posts{
+    id
+    authorId
+    user{
+      id
+      email
+      password
+    }
+  }
 }
+}
+
+query{
+  users{
+   id
+   email
+   password
+   posts{
+    id
+    body
+    authorId
+    }
+  }
+} 
+
 ```
